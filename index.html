@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>Seventeen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/cursor.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen">
+	
+	<link rel="apple-touch-icon" href="images/cards.png">
+	<link rel="shortcut icon" href="images/cards.png" type="image/png">
+	
+</head>
+<body style="background-color: transparent !important;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				&nbsp;
+			</div><!--/col-md-12 -->
+		</div><!--/.row -->
+		<div class="row">
+			<div class="col-md-12">
+				&nbsp;
+			</div><!--/col-md-12 -->
+		</div><!--/.row -->
+		<div class="row">
+			<div class="col-md-12">
+				&nbsp;
+			</div><!--/col-md-12 -->
+		</div><!--/.row -->
+
+		<div class="row">
+			<div class="col-md-1 user-score"></div><!--/.col-md-1 -->
+			
+			<div class="col-md-10 game-table" style="height: 50% !important;">
+					<section class="computer">
+						<img class="card card-back img-responsive" src="images/back.png">
+					</section><!-- /.computer -->
+					<div class="computer-notice">
+						<div class="row">
+							<div class="col-md-3 computer-msg">computer:~$ <div class="computer-cursor">&nbsp;</div></div>
+							<div class="col-md-9 computer-time"></div>
+						</div><!--/.row -->
+					</div>
+					
+					<section class="player"></section><!-- /.player -->
+					<div class="user-notice">
+						<div class="row">
+							<div class="col-md-2 user-msg">you:~$ <div class="user-cursor">&nbsp;</div></div>
+							<div class="col-md-10 user-time"></div>
+						</div><!--/.row -->
+					</div>
+					
+			</div><!--/.col-md-10 -->
+			
+			<div class="col-md-1 computer-score">&nbsp;</div><!--/.col-md-1 -->
+			
+		</div><!--/.row -->
+		<div class="row">
+			<div class="col-md-1">&nbsp;</div>
+			<div class="col-md-10 howto"><ul type="square"><li>Click on your card (shown) to draw new card for yourself.</li><li>Click on the computer's card (flipped) to fold.</li></ul></div>
+			<div class="col-md-1">&nbsp;</div>
+		</div><!--/.row -->
+	</div><!--/.container -->
+	
+	<a class="instructions" href="#data" style="display: none;">&nbsp;</a>
+
+	<div style="display:none;">
+		<div id="data">
+			<h3>Seventeen</h3>
+			<p>
+				This is a simple card game where the aim is to get your cards as close to 17 as possible. The following describe the rules and instructions on how to play:
+			</p>
+			<ul type="square">
+				<li>You'll be given two cards to start with.</li>
+				<li>If you want more, click on any of your card. Your cards are shown while the computer's card is turned back.</li>
+				<li>If the sum of ranks of your card reaches 17, you win. If it gets over 17, the computer wins.</li>
+				<li>Go on adding cards till you're as close to 17 as possible.</li>
+				<li>To fold, click on the computer's card. The computer's card is turned back.</li>
+			</ul>
+			<p>
+				Click on the cross on top-left of the lightbox to close this and start playing. 
+			</p>
+			<p>
+				This instruction won't come up again.
+			</p>
+			<p>
+				Have fun!
+			</p>
+		</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<script>
+
+		$('.card-back').on("click", function() {
+			// Computer
+			user_folded();
+		});
+		
+		$(document).on("click", ".card-front", function() {
+			// Player
+			add_card('1');		// 1 because the user is considered to be player 1.
+		});
+	</script>
+
+</body>
+</html>

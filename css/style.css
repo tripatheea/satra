@@ -1,0 +1,79 @@
+html { 
+	background: url(../images/texture2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+}
+
+.game-table {
+	background: url(../images/texture1.jpg) no-repeat center center fixed; 
+	box-shadow: 0px 0px 7px #A6A6B3;
+}
+
+.computer {
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	height: 35%;
+}
+
+.player {
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	height: 35%;
+}
+
+.computer img, .player img {
+	max-width: 10%;
+	cursor: pointer;
+}
+
+.card-back {
+	width: 11% !important;
+}
+
+.computer-notice {
+	background: #000;
+	margin: 30px 10px 30px 10px;
+	height: 15%;
+	padding: 2px;
+	overflow: automatic;
+}
+
+.user-notice {
+	background: #000;
+	margin: 30px 10px 30px 10px;
+	height: 15%;
+	padding: 2px;
+	overflow: automatic;
+}
+
+.user-msg, .user-time {
+	color: #090;
+}
+
+.computer-msg, .computer-time {
+	color: #205996;
+}
+
+.user-score {
+	color: #090;
+	text-align: center;
+	font-size: 5em;
+	margin: 25% 0 0 0;
+}
+
+.computer-score {
+	color: #205996;
+	text-align: center;
+	font-size: 5em;
+	margin: 3% 0 0 0;
+}
+
+.howto {
+	color: #5C5C5C;
+	background: #000;
+	margin-top: 1px;
+	font-size: 11px;
+}

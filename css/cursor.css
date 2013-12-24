@@ -1,0 +1,93 @@
+div.user-cursor {
+	color: #090;
+	display: inline-block;
+	background: #111;
+	margin-left: 1px;
+	font-family: Courier New, Courier, monospace;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	-webkit-animation: user-blink 1s linear 0s infinite;
+	-moz-animation: user-blink 1s linear 0s infinite;
+	-ms-animation: user-blink 1s linear 0s infinite;
+	-o-animation: user-blink 1s linear 0s infinite;
+}
+@-webkit-keyframes user-blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+@-moz-keyframes user-blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+@-ms-keyframes user-blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+@-o-keyframes user-blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+
+div.computer-cursor {
+	color: #205996;
+	display: inline-block;
+	background: #111;
+	margin-left: 1px;
+	font-family: Courier New, Courier, monospace;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	-webkit-animation: computer-blink 1s linear 0s infinite;
+	-moz-animation: computer-blink 1s linear 0s infinite;
+	-ms-animation: computer-blink 1s linear 0s infinite;
+	-o-animation: computer-blink 1s linear 0s infinite;
+}
+@-webkit-keyframes computer-blink {
+  0%   { background: #2A76C7 }
+  47%  { background: #205996 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #205996 }
+}
+
+@-moz-keyframes computer-blink {
+  0%   { background: #2A76C7 }
+  47%  { background: #205996 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #205996 }
+}
+
+@-ms-keyframes computer-blink {
+  0%   { background: #2A76C7 }
+  47%  { background: #205996 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #205996 }
+}
+
+@-o-keyframes computer-blink {
+  0%   { background: #2A76C7 }
+  47%  { background: #205996 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #205996 }
+}
+
