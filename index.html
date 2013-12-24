@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta content="charset=utf-8">
-	<title>Seventeen</title>
+	<title>Satra</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
@@ -12,7 +12,6 @@
 	
 	<link rel="apple-touch-icon" href="images/cards.png">
 	<link rel="shortcut icon" href="images/cards.png" type="image/png">
-	
 </head>
 <body style="background-color: transparent !important;">
 	<div class="container">
@@ -61,7 +60,7 @@
 		</div><!--/.row -->
 		<div class="row">
 			<div class="col-md-1">&nbsp;</div>
-			<div class="col-md-10 howto"><ul type="square"><li>Click on your card (shown) to draw new card for yourself.</li><li>Click on the computer's card (flipped) to fold.</li></ul></div>
+			<div class="col-md-10 howto"><ul type="square"><li>Click on your card (shown) to draw a new card for yourself.</li><li>Click on the computer's card (turned upside down) to fold and force computer to play his cards.</li></ul></div>
 			<div class="col-md-1">&nbsp;</div>
 		</div><!--/.row -->
 	</div><!--/.container -->
@@ -70,7 +69,7 @@
 
 	<div style="display:none;">
 		<div id="data">
-			<h3>Seventeen</h3>
+			<h3>Satra (Seventeen)</h3>
 			<p>
 				This is a simple card game where the aim is to get your cards as close to 17 as possible. The following describe the rules and instructions on how to play:
 			</p>
@@ -82,7 +81,7 @@
 				<li>To fold, click on the computer's card. The computer's card is turned back.</li>
 			</ul>
 			<p>
-				Click on the cross on top-left of the lightbox to close this and start playing. 
+				Click on the cross on top-right of the lightbox to close this and start playing. 
 			</p>
 			<p>
 				This instruction won't come up again.
@@ -92,25 +91,23 @@
 			</p>
 		</div>
 	</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-md-1">&nbsp;</div>
+		<div class="col-md-10 text-right">
+			<a target="_blank" href="https://github.com/tripatheea/satra/">Source Code: https://github.com/tripatheea/satra/</a>
+		</div>
+		<div class="col-md-1">&nbsp;</div>
+	</div>
+</div>
 
 	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="js/jquery.cookie.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
-
-	<script>
-
-		$('.card-back').on("click", function() {
-			// Computer
-			user_folded();
-		});
-		
-		$(document).on("click", ".card-front", function() {
-			// Player
-			add_card('1');		// 1 because the user is considered to be player 1.
-		});
-	</script>
+	<script src="js/script2.js"></script>
 
 </body>
 </html>

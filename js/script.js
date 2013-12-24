@@ -40,7 +40,7 @@ function draw_card_for_computer() {
 	// A little bit of cheating to give the computer an edge but making sure that the game "feels" fair.
 	drawnCard = draw_card();
 	sumSoFar = calculate_sum(players[0]);
-	if (random_magic(40)) {
+	if (random_magic(90)) {
 		return drawnCard;
 	}
 	else {
@@ -175,7 +175,7 @@ function counter($el, n) {
 	(function loop() {
 		$el.html("<br>Will restart in <strong>" + n + "</strong> s.<div class='user-cursor'>&nbsp;</div>");
 		if (n == 0) {
-			window.location = 'http://techsth.com/seventeen/';
+			window.location = 'http://techsth.com/satra/';
 		}
 		if (n--) {
 			setTimeout(loop, 1000);
@@ -346,7 +346,7 @@ function cookie_win(playerIndex) {
 function fold_count(player, count) {
 	data = 'player=' + player + '&count=' + count;
 	$.ajax({
-		url: "http://techsth.com/seventeen/analytics/fold_count.php",
+		url: "http://techsth.com/satra/analytics/fold_count.php",
 		type: "POST",
 		data: data,
 		cache: false,
@@ -356,7 +356,7 @@ function fold_count(player, count) {
 function win_count(player) {
 	data = 'player=' + player;
 	$.ajax({
-		url: "http://techsth.com/seventeen/analytics/win_count.php",
+		url: "http://techsth.com/satra/analytics/win_count.php",
 		type: "POST",
 		data: data,
 		cache: false,
@@ -368,7 +368,7 @@ function win_count(player) {
 function score_count(player, score) {
 	data = 'player=' + player + '&score=' + score;
 	$.ajax({
-		url: "http://techsth.com/seventeen/analytics/score_count.php",
+		url: "http://techsth.com/satra/analytics/score_count.php",
 		type: "POST",
 		data: data,
 		cache: false,

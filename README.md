@@ -1,9 +1,9 @@
-Seventeen
+Satra
 =========
 
 A simple card game built with JavaScript with lots of help from jQuery.
 
-A live working version at: http://techsth.com/seventeen/
+A live working version at: http://techsth.com/satra/
 
 --------------
 This is a simple card game where the aim is to get your cards as close to 17 as possible. The following describe the rules and instructions on how to play:
