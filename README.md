@@ -1,7 +1,7 @@
 Satra
 =========
 
-A simple card game built with JavaScript with lots of help from jQuery.
+A simple card game, sort of like Blackjack, built with JavaScript with lots of help from jQuery.
 
 A live working version at: http://techsth.com/satra/
 
